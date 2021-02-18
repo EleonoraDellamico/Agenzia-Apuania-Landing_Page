@@ -56,10 +56,10 @@ nav {
 	border-color: transparent;
 	transition: var(--transition);
 	cursor: pointer;
-	position: fixed;
+	position: relative;
 	top: 0;
 	right: 0;
-	margin-top: 32px;
+	margin-top: -24px;
 	margin-right: 10px;
 }
 .nav-toggle:hover {
@@ -99,7 +99,7 @@ nav {
 }
 /*END NAVBAR*/
 
-/* START MEDIAQUERIES NAVBAR*/
+/* START MEDIAQUERIES --IPAD-- NAVBAR*/
 @media screen and (min-width: 768px) {
 	.nav-center {
 		max-width: 1170px;
@@ -139,12 +139,23 @@ nav {
 		color: var(--clr-primary-7);
 	}
 }
-/* END MEDIAQUERIES NAVBAR*/
+/* END MEDIAQUERIES --IPAD--NAVBAR*/
+
+/*START MEDIA QUERIES --PC-- NAVBAR*/
+@media screen and (min-width: 1200px) {
+	.links {
+		margin-right: 46px;
+	}
+	.logo {
+		height: 199px;
+	}
+}
+/*END MEDIA QUERIES --PC-- NAVBAR*/
 
 /*HEADER START*/
 .hero {
 	width: 100vw;
-	height: 60vh;
+	height: 40vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -166,7 +177,7 @@ nav {
 }
 /*END HEADER*/
 
-/*START MEDIA QUERIES HEADER*/
+/*START MEDIA QUERIES --IPAD-- HEADER*/
 @media screen and (min-width: 768px) {
 	.hero-title {
 		margin-top: -256px;
@@ -174,4 +185,42 @@ nav {
 	.title-agenzia {
 		font-size: 28px;
 	}
+}
+/*END MEDIA QUERIES IPAD HEADER*/
+
+/*START MEDIA QUERIES --PC-- HEADER*/
+@media screen and (min-width: 1200px) {
+	.hero-title {
+		margin-top: -402px;
+	}
+}
+/*END MEDIA QUERIES --PC-- HEADER*/
+
+/*START SECTION CARD*/
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px 10px 10px 10px;
+	justify-content: center;
+}
+.card {
+	width: 80vw;
+	height: auto;
+}
+.main__card {
+	padding: 15px 15px 15px 15px;
+}
+.main__card--info {
+	text-align: center;
+}
+
+#cardMan,
+#main__card__agency {
+	background-color: rgb(167 162 162 / 23%);
+	margin-bottom: 40px;
+}
+
+#cardGirl {
+	margin-bottom: 40px;
 }
