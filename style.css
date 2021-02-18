@@ -197,30 +197,73 @@ nav {
 /*END MEDIA QUERIES --PC-- HEADER*/
 
 /*START SECTION CARD*/
-.container {
+.feature .container {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 10px 10px 10px 10px;
+	flex-direction: row;
+	padding: 24px 16px;
 	justify-content: center;
+	align-items: center;
+	min-height: 350px;
 }
-.card {
-	width: 80vw;
-	height: auto;
+
+.feature.feature--inverse .container {
+	flex-direction: row-reverse !important;
 }
-.main__card {
-	padding: 15px 15px 15px 15px;
+
+.feature .container > * {
+	max-width: 90%;
 }
-.main__card--info {
+
+.feature__info {
+	padding: 10px 12px;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	text-align: center;
 }
 
-#cardMan,
-#main__card__agency {
-	background-color: rgb(167 162 162 / 23%);
-	margin-bottom: 40px;
+.feature__info h2 {
+	font-size: 2.14rem;
+	font-weight: 400;
+	line-height: 3rem;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-#cardGirl {
-	margin-bottom: 40px;
+.feature__info p {
+	line-height: 30px;
+	text-align: justify;
+}
+
+.feature__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature__image img {
+	max-width: 300px;
+}
+
+#features__agency,
+#features__man {
+	background-color: #f5f7fa;
+}
+
+/*END SECTION CARD*/
+
+/*MEDIA QUERIE --IPAD-- CARD*/
+@media (min-width: 768px) {
+	.feature .container > * {
+		width: 50%;
+	}
+	#features__agency {
+		margin-top: 80px;
+	}
+	.feature__info {
+		align-items: flex-start;
+		text-align: left;
+	}
 }
