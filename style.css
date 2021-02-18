@@ -69,7 +69,7 @@ nav {
 .fa-bars {
 	color: var(--ff-color-menu);
 }
-.logo {
+#nav__logo {
 	height: 121px;
 }
 .links a {
@@ -160,7 +160,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 }
-.img-hero {
+#hero__photo {
 	object-fit: contain;
 	width: 100%;
 	opacity: 0.6;
