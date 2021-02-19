@@ -348,6 +348,9 @@ textarea {
 label {
 	list-style: none;
 } */
+.section__contact {
+	display: flex;
+}
 .contact {
 	width: 328px;
 	margin: 50px 28px 50px 28px;
