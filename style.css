@@ -350,6 +350,8 @@ label {
 } */
 .section__contact {
 	display: flex;
+	margin-top: 60px;
+	justify-content: center;
 }
 .contact {
 	width: 328px;
