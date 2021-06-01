@@ -236,15 +236,17 @@ a {
 @media (min-width: 768px) {
 	.main__section__carusel__card {
 		width: 236px;
+		margin-left: 35px;
 	}
 	.main__section__carusel__card > img {
-		width: 233px;
+		width: 178px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.main__section__carusel__card {
 		width: 287px;
+		margin-left: 40px;
 	}
 	.main__section__carusel__card > img {
 		width: 279px;
@@ -372,31 +374,32 @@ a {
 	.contact {
 		display: flex;
 		flex-direction: column;
-		width: 69vw;
+		width: 70vw;
 		margin: 50px 28px 50px 28px;
 		box-shadow: 0 0 15px 3px rgb(0 0 0 / 20%);
-		height: 60vh;
+		height: 95vh;
 		justify-content: space-between;
 	}
 	.contact form {
-		height: 34vh;
+		height: 62vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		width: 65%;
+		display: flex;
+		align-self: center;
 	}
 	.contact form button {
 		display: flex;
 		width: fit-content;
 		margin: 0;
 		padding: 18px;
-		letter-spacing: 1px;
-		background: #ca1e1e;
-		color: #fefefe;
-		border: none;
-		border-radius: 40px;
-		-webkit-box-shadow: 0px 4px 8px rgb(165 126 157 / 62%);
-		box-shadow: 0px 4px 8px rgb(165 126 157 / 62%);
-		cursor: pointer;
+	}
+
+	.contact form > textarea {
+		height: 400px;
+		margin-bottom: 40px;
+		resize: none;
 	}
 }
 /*END FORM*/
