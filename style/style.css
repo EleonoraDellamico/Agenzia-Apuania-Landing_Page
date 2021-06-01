@@ -426,8 +426,8 @@ a {
 	justify-content: space-around;
 }
 .footer__icon > img {
-	width: 35px;
-	height: auto;
+	width: 48px;
+	height: 48px;
 }
 .ourcontact__text {
 	display: flex;
@@ -443,8 +443,7 @@ a {
 	align-items: center;
 	margin-top: 32PX;
 }
-.ourcontact__text__footer .a {
-}
+
 .text-contact__footer {
 	color: black;
 	justify-content: center;
