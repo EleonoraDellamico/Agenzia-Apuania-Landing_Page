@@ -171,9 +171,11 @@ a {
 /*PARTNER carusel*/
 
 .main__carousel {
-	position: relative;
+	display: flex;
+	flex-direction: column;
 	margin-top: 65px;
 	height: 40vh;
+	justify-content: center;
 }
 .main__title h2 {
 	display: flex;
@@ -234,6 +236,13 @@ a {
 }
 /*MEDAIQUERIES PATERNES*/
 @media (min-width: 768px) {
+	.main__carousel {
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	.main__section__carusel__card {
 		width: 236px;
 		margin-left: 35px;
@@ -244,6 +253,13 @@ a {
 }
 
 @media (min-width: 1200px) {
+	.main__carousel {
+		height: 40vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
 	.main__section__carusel__card {
 		width: 287px;
 		margin-left: 40px;
@@ -371,13 +387,17 @@ a {
 @media (min-width: 768px) {
 }
 @media (min-width: 1200px) {
+	.section__contact {
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}
 	.contact {
 		display: flex;
 		flex-direction: column;
 		width: 70vw;
 		margin: 50px 28px 50px 28px;
 		box-shadow: 0 0 15px 3px rgb(0 0 0 / 20%);
-		height: 95vh;
+		height: 73vh;
 		justify-content: space-between;
 	}
 	.contact form {
@@ -397,7 +417,7 @@ a {
 	}
 
 	.contact form > textarea {
-		height: 400px;
+		height: 300px;
 		margin-bottom: 40px;
 		resize: none;
 	}
