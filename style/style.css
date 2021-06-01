@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background: white;
 	line-height: 1.5;
 }
@@ -95,7 +95,7 @@ a {
 	font-size: 2.14rem;
 	font-weight: 400;
 	line-height: 3rem;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin: 20px 0;
 }
 
@@ -188,7 +188,7 @@ a {
 	font-size: 2.14rem;
 	font-weight: 400;
 	line-height: 3rem;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .main__section__carusel {
@@ -356,7 +356,12 @@ a {
 	box-shadow: 0px 4px 8px rgba(165, 126, 157, 0.62);
 	cursor: pointer;
 }
-
+input::placeholder {
+	font-family: 'Open Sans', sans-serif;
+}
+textarea::placeholder {
+	font-family: 'Open Sans', sans-serif;
+}
 .contact form > input:focus,
 .contact form > textarea:focus,
 .contact form button:focus {
@@ -414,62 +419,22 @@ a {
 	justify-content: center;
 	align-items: center;
 }
-.footer__img__container {
-	margin-top: -62px;
+.container__info--adress {
 	display: flex;
+	width: 100vw;
 	justify-content: center;
 }
+
 .footer__icon {
 	display: flex;
 	justify-content: center;
 	width: 50vw;
 	justify-content: space-around;
-}
-
-.ourcontact__text {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	height: 10vh;
-	align-items: center;
-	justify-content: space-around;
-}
-.ourcontact__text__footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 32PX;
-}
-
-.text-contact__footer {
-	color: black;
-	justify-content: center;
-}
-a:hover {
-	color: red;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
-	.footer__icon > img {
-		width: 54px;
-		height: auto;
-	}
-	.ourcontact__text {
-		font-size: 24px;
-	}
 }
 @media (min-width: 1200) {
-	.footer__icon {
-		display: flex;
-		justify-content: center;
-		width: 27vw;
-		justify-content: space-around;
-	}
-	.ourcontact__text__footer {
-		display: flex;
-		flex-direction: column;
-		height: 11vh;
-		background-color: aquamarine;
-		justify-content: flex-end;
-	}
 }
